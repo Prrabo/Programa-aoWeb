@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title> Tabelas</title>
+	</head>
+	
+	<body>
+		<table style="width:15%; border-color:blue;" border ="1">
+
+			<thead>
+				<tr>
+					<th>FirstName</th>
+					<th>LastName</th>
+					<th>Age</th>
+					<th>Origem</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="2">Jill</td>
+					<td rowspan="2">50</td>
+					<td>Florida</td>
+				</tr>
+				<tr>
+					<td>Jailson</td>
+					<td>56</td>
+					<td>California</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<form method="post" "/receber_dados.php">
+			<input type="text" name="nome" placeholder="Digite seu nome">
+			<input type="e-mail" name="email" placeholder="Digite seu email">
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="button" value="Clique Aqui" onclick="msg()"><br>
+			<input type="checkbox" name="Veiculo 1" value="Bicicleta">Eu tenho uma bike mano<br>
+			<input type="checkbox" name="Veiculo 2" value="Moto">Eu tenho uma moto ran gan gan<br>
+			<input type="checkbox" name="Veiculo 3" value="Carro">Eu tenho um fuscão preto<br>
+			Selecione sua cor preferida: <input type="color" name="favcor" value="#0000FF"><br>
+			Data de nascimento: <input type="date" name="nascimento">
+		</form>
+		
+		<script>
+		function msg() {
+		alert("Seu pc foi infectado por corona com sucesso!");
+		}
+		</script>
+		
+	</body>
+</html>
